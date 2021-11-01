@@ -1,5 +1,10 @@
+//What is an API ?
+//API is a set of functions that can be called by other programs.
+
+// storing the uploaded image in the variable
 const imageUpload = document.getElementById('imageUpload')
 
+//then we are calling the start function
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
   faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
